@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@mipmap/ic_dibu_bg"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_tab_product"
+        style="@style/main_home_ll_style">
+
+        <ImageView
+            android:id="@+id/iv_main"
+            style="@style/main_home_iv_style"
+            android:background="@mipmap/main" />
+
+        <TextView
+            android:id="@+id/tv_home"
+            style="@style/main_home_tv_style"
+            android:text="首页" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_contrast"
+        style="@style/main_home_ll_style">
+
+        <ImageView
+            android:id="@+id/iv_headstyle_contrast"
+            style="@style/main_home_iv_style"
+            android:background="@mipmap/contrast" />
+
+        <TextView
+            android:text="@string/b_a"
+            android:id="@+id/tv_b_a"
+            style="@style/main_home_tv_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_skup"
+        style="@style/main_home_ll_style">
+
+        <ImageView
+            android:id="@+id/camera"
+            style="@style/main_home_iv_style"
+            android:background="@mipmap/camera" />
+
+        <TextView
+            android:id="@+id/tv_skup"
+            style="@style/main_home_tv_style"
+            android:text="头皮管理" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_skin"
+        style="@style/main_home_ll_style">
+
+        <ImageView
+            android:id="@+id/skin"
+            style="@style/main_home_iv_style"
+            android:background="@mipmap/skin" />
+
+        <TextView
+            android:id="@+id/tv_skin"
+            style="@style/main_home_tv_style"
+            android:text="皮肤管理" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_shopping_cart"
+        style="@style/main_home_ll_style">
+
+        <ImageView
+            android:id="@+id/shop"
+            style="@style/main_home_iv_style"
+            android:background="@mipmap/shop" />
+
+        <TextView
+            android:id="@+id/tv_training"
+            style="@style/main_home_tv_style"
+            android:text="培训视频" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_user_center"
+        style="@style/main_home_ll_style">
+        <ImageView
+            android:id="@+id/user"
+            style="@style/main_home_iv_style"
+            android:background="@mipmap/user" />
+        <TextView
+            android:id="@+id/tv_user"
+            style="@style/main_home_tv_style"
+            android:text="个人中心" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

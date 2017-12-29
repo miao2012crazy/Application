@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="192dp"
+    android:layout_height="256dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/selector_hair_boy"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <ImageView
+        android:id="@+id/iv_hair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

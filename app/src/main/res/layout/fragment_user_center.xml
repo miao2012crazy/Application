@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            app:cardElevation="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="224dp"
+            android:layout_height="224dp"
+            app:cardCornerRadius="112dp">
+            <ImageView
+                android:elevation="20dp"
+                android:id="@+id/iv_user_header"
+                android:layout_width="224dp"
+                android:layout_height="224dp"
+                android:scaleType="fitCenter" />
+            </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:elevation="5dp"
+                    android:id="@+id/tv_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="#333"
+                    android:textSize="42sp" />
+                    <ImageView
+                        android:elevation="5dp"
+                        android:id="@+id/iv_user_head_img"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:textColor="#333" />
+                    <ImageView
+                        android:id="@+id/ib_wechat"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/appwx_logo_no"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--**************************************************************-->
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recycler_user_center"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+
+
+            <Button
+                android:elevation="5dp"
+                android:layout_gravity="center|bottom"
+                android:id="@+id/btn_concel_login"
+                android:layout_width="500dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/selector_login"
+                android:text="退出登录"
+                android:textColor="#fff"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:background="#fff"
+        android:id="@+id/rl_webview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.awarmisland.android.popularrefreshlayout.RefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView
+
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+             />
+        </com.awarmisland.android.popularrefreshlayout.RefreshLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_progressbar"
+            android:background="#50000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:indeterminateDrawable="@drawable/loading_progress"
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBarLoading"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+            <TextView
+                android:id="@+id/progress"
+                android:textSize="50sp"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

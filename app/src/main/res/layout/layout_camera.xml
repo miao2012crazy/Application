@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextureView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/iv_camera_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_camera_bg" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll_reset_btn"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="#313131"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/selector_camera_state"
+                android:text="重新拍照"
+                android:textColor="#999"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_camera_state"
+                android:text="保存照片"
+                android:textColor="#999"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_capture"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="#313131">
+
+            <Button
+                android:id="@+id/still_button"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/selector_camera_state"
+                android:text="拍照"
+                android:textColor="#999"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

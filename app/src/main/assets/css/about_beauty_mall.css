@@ -1,0 +1,16 @@
+.body_style {
+	width: 1000px;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+
+
+/*反馈标题输入框样式*/
+
+.font_title {
+
+	height: 100px;
+	margin: 0 auto;
+	line-height: 100px;
+	text-align: center;
+}

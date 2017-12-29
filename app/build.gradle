@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.xialan.application"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 26
+        versionName "26.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets{
+        main{
+            jniLibs.srcDirs=['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.4.4'
+    compile 'com.flurgle:camerakit:0.9.17'
+    compile 'io.reactivex:rxjava:1.3.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.danikula:videocache:2.7.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
+    compile 'com.github.lsjwzh.RecyclerViewPager:lib:v1.1.2@aar'
+    compile 'com.github.lsjwzh.RecyclerViewPager:tablayoutsupport:v1.1.2@aar'
+    compile 'com.tamic.novate:novate:1.5.4.1'
+    compile 'io.github.openfeign:feign-gson:9.5.1'
+    compile 'com.edmodo:cropper:2.0.0'
+    compile 'com.soundcloud.android:android-crop:1.0.1'
+    compile 'com.awarmisland.android:popularrefreshlayout:1.0.4'
+}

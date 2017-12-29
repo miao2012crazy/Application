@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_names" >
+        <item>选项0</item>
+        <item>选项1</item>
+        <item>选项2</item>
+        <item>选项3</item>
+        <item>选项4</item>
+        <item>选项5</item>
+    </string-array>
+</resources>

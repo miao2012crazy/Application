@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+    <fragment
+        android:layout_margin="20dp"
+        android:id="@+id/fragment_video"
+        android:name="com.xialan.app.view.mainfragment.VideoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="554"
+        tools:layout="@layout/fragment_video" />
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1070"
+        android:background="@drawable/main_bg_contaoner" />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:name="com.xialan.app.view.mainfragment.NoticeFragment"
+        android:id="@+id/fragment_notice"
+        tools:layout="@layout/fragment_notice" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160">
+        <include layout="@layout/bottom_bar_layout"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">购美</string>
+    <string name="basic">Basic</string>
+    <string name="b_a"><![CDATA[B&A]]></string>
+    <string name="match_num_en">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="android_n_app">扫码下载\nAndroid APP</string>
+    <string name="beauty_mall">购美 · Beauty Mall\nAndroid</string>
+    <string name="beauty_mall_ios">购美 · Beauty Mall\nIOS</string>
+</resources>

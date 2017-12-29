@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="230dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_login_dialog"
+        android:gravity="center"
+        android:text="系统提示"
+        android:textColor="#fff"
+        android:textSize="26sp" />
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:id="@+id/tv_login_time"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_login_keep"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_keep_login"
+            android:text="保持登录"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_login_cancel"
+            android:layout_marginLeft="20dp"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_cancel_login"
+            android:text="退出登录"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

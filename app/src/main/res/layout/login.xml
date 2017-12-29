@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/ll_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--***********************登录相关****************************-->
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <EditText
+             android:id="@+id/et_user_name_1"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_user"
+            android:background="@drawable/selector_focus"
+            android:layout_width="600dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:hint="用户名/手机号"
+            android:inputType="phone"
+            android:textColor="#999"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="34sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_user_psd_1"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:drawablePadding="10dp"
+            android:background="@drawable/selector_focus"
+            android:layout_width="600dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:hint="密码"
+            android:textColor="#999"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="34sp"
+            />
+    </LinearLayout>
+    <Button
+        android:textColor="#FFF"
+        android:id="@+id/btn_login_act"
+        android:layout_width="600dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/selector_btn_login"
+        android:text="登 录"
+        android:layout_marginBottom="20dp"
+        android:textSize="34sp" />
+    </LinearLayout>

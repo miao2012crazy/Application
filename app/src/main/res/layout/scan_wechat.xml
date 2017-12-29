@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="456dp"
+        android:layout_height="590dp"
+        android:background="@drawable/shape_scan_right">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="412dp"
+            android:layout_height="522dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_scan_right_ll"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="192dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/bg_wechat" />
+
+            <ImageView
+                android:id="@+id/iv_wechat"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="微信扫码，快捷付款"
+                android:textColor="#00c800"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            style="@style/ll_skup_style"
+            android:layout_marginRight="5dp"
+            android:layout_weight="504"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:text="周期"
+                android:textSize="26sp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_skin_show"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="484dp"
+                android:layout_height="336dp"
+                android:layout_margin="5dp"
+               />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--********************************************-->
+                    <LinearLayout
+
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@mipmap/ic_logo_1"/>
+                        <TextView
+                            android:id="@+id/tv_skup_title_2"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/head_rg_normal"
+                            android:text="溢脂性头皮"
+                            android:textSize="24sp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_content_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="#999"/>
+                    <!-- *********************************************** -->
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@mipmap/ic_logo_1"/>
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/head_rg_normal"
+                            android:text="相关产品"
+                            android:textSize="24sp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_skup_product"
+                        android:textSize="22sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"/>
+                    <!--******************************************-->
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@mipmap/ic_logo_1"/>
+                        <TextView
+
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/head_rg_normal"
+                            android:text="建议使用周期"
+                            android:textSize="24sp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_shiyongzhouqi"
+                        android:textSize="22sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="450"
+            style="@style/ll_skup_style"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp" >
+            <TextView
+                android:gravity="center"
+                android:text="使用周期"
+                android:textSize="26sp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_skin_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_login"/>
+</FrameLayout>

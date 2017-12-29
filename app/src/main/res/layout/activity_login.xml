@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:id="@+id/ll_container_2"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:textColor="#FFF"
+        android:id="@+id/btn_return"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_return"
+        android:layout_marginBottom="20dp"
+        android:textSize="34sp" />
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_login_raduio"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_regist"
+                android:layout_width="300dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rb_regist"
+                android:button="@null"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/text_selector"
+                android:textSize="34sp" />
+
+            <RadioButton
+                android:id="@+id/rb_login"
+                android:layout_width="300dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rb_login"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/text_selector"
+                android:textSize="34sp" />
+            <RadioButton
+                android:id="@+id/rb_weichat"
+                android:layout_width="300dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rb_wechat"
+                android:button="@null"
+                android:gravity="center"
+                android:text="微信登录"
+                android:textColor="@color/text_selector"
+                android:textSize="34sp" />
+        </RadioGroup>
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </RelativeLayout>
+        <!--***************************************************-->
+    </LinearLayout>
+
+</LinearLayout>

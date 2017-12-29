@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_margin="@dimen/dp_10"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_splash"
+        android:layout_centerInParent="true"
+        android:layout_width="1000dp"
+        android:layout_height="300dp" />
+</RelativeLayout>
